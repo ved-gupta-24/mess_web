@@ -1,0 +1,44 @@
+{
+  "MON": {
+    "breakfast": "Aloo Paratha, Curd, Butter, Pickle, Tea",
+    "lunch": "Rajma Masala, Jeera Rice, Tawa Roti, Green Salad, Boondi Raita",
+    "beverage": "Cold Coffee / Lemon Iced Tea",
+    "dinner": "Paneer Bhurji, Dal Tadka, Roti, Rice, Gulab Jamun"
+  },
+  "TUE": {
+    "breakfast": "Idli, Sambar, Coconut Chutney, Tea / Coffee",
+    "lunch": "Aloo Gobbi Adraki, Yellow Dal Fry, Rice, Roti, Salad",
+    "beverage": "Fresh Buttermilk",
+    "dinner": "Egg Curry / Malai Kofta, Steamed Rice, Tawa Roti, Vanilla Ice Cream"
+  },
+  "WED": {
+    "breakfast": "Poha with Sev, Sprouts Salad, Jalebi, Tea",
+    "lunch": "Veg Kadhai, Dal Makhani, Rice, Roti, Salad",
+    "beverage": "Mixed Fruit Juice",
+    "dinner": "Chicken Masala / Shahi Paneer, Jeera Rice, Rumali Roti, Kheer"
+  },
+  "THU": {
+    "breakfast": "Bread Butter Jam, Veg Cutlet, Boiled Eggs, Tea",
+    "lunch": "Chana Masala, Bhature, Pulao, Curd, Salad",
+    "beverage": "Sweet Lassi",
+    "dinner": "Aloo Beans, Mix Dal, Tawa Roti, Rice, Custard"
+  },
+  "FRI": {
+    "breakfast": "Uttapam, Tomato Chutney, Sambar, Tea",
+    "lunch": "Bhindi Do Pyaza, Lauki Chana Dal, Rice, Roti, Salad",
+    "beverage": "Masala Chaas",
+    "dinner": "Paneer Butter Masala, Dal Panchmel, Butter Roti, Rice, Rasgulla"
+  },
+  "SAT": {
+    "breakfast": "Methi Thepla, Curd, Butter, Tea",
+    "lunch": "Veg Biryani, Salan, Raita, Roti, Salad",
+    "beverage": "Jaljeera Sharbata",
+    "dinner": "Gobbi Masala, Chana Dal, Tawa Roti, Rice, Hot Halwa"
+  },
+  "SUN": {
+    "breakfast": "Chole Bhature, Pickle, Lassi / Tea",
+    "lunch": "Paneer Tikka Masala, Veg Pulao, Naan, Salad, Raita",
+    "beverage": "Mango Shake",
+    "dinner": "Special Butter Chicken / Shahi Paneer, Butter Naan, Rice, Gulab Jamun"
+  }
+}

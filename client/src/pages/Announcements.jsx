@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { api } from '../lib/api';
+import { Megaphone, AlertOctagon, Info, Clock } from 'lucide-react';
 
 export default function Announcements() {
   const [items, setItems] = useState([]);
@@ -12,29 +13,82 @@ export default function Announcements() {
       .finally(() => setLoading(false));
   }, []);
 
+  const getPriorityStyles = (priority) => {
+    switch (priority) {
+      case 'urgent':
+        return {
+          card: 'border-l-4 border-l-red-500 bg-red-50/40 hover:bg-red-50/60 border border-slate-200',
+          badge: 'bg-red-100 text-red-800 border-red-200',
+          icon: <AlertOctagon className="h-5 w-5 text-red-600 animate-pulse" />
+        };
+      case 'important':
+        return {
+          card: 'border-l-4 border-l-amber-500 bg-amber-50/40 hover:bg-amber-50/60 border border-slate-200',
+          badge: 'bg-amber-100 text-amber-800 border-amber-200',
+          icon: <Info className="h-5 w-5 text-amber-600" />
+        };
+      default:
+        return {
+          card: 'border-l-4 border-l-brand-500 bg-white hover:border-brand-600 border border-slate-200',
+          badge: 'bg-brand-50 text-brand-800 border-brand-200',
+          icon: <Megaphone className="h-5 w-5 text-brand-600" />
+        };
+    }
+  };
+
   return (
-    <div>
-      <h1 className="page-title">Announcements</h1>
-      <p className="page-sub">Updates from mess management</p>
+    <div className="max-w-4xl mx-auto py-2">
+      {/* Page Header */}
+      <div className="border-b border-slate-200 pb-5 mb-8">
+        <h1 className="text-3xl font-extrabold text-slate-900 tracking-tight flex items-center gap-2">
+          <Megaphone className="h-8 w-8 text-brand-600" />
+          Announcements
+        </h1>
+        <p className="text-slate-500 mt-1">Updates and notifications from mess management.</p>
+      </div>
 
       {loading ? (
-        <div className="empty">Loading…</div>
+        <div className="flex flex-col items-center justify-center py-20 bg-white border border-slate-200 rounded-2xl shadow-sm">
+          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-brand-600 mb-4"></div>
+          <p className="text-slate-500 font-medium">Loading announcements...</p>
+        </div>
       ) : items.length === 0 ? (
-        <div className="empty">No announcements right now.</div>
+        <div className="flex flex-col items-center justify-center py-20 bg-white border border-slate-200 rounded-2xl shadow-sm text-center px-4">
+          <Megaphone className="h-12 w-12 text-slate-400 mb-3" />
+          <h3 className="text-lg font-bold text-slate-900">No Announcements</h3>
+          <p className="text-slate-500 mt-1 max-w-sm">Everything is running smoothly! Check back later for updates.</p>
+        </div>
       ) : (
-        <div className="grid">
-          {items.map((a) => (
-            <div key={a.id} className="card">
-              <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center', marginBottom: '0.5rem' }}>
-                <h3>{a.title}</h3>
-                <span className={`badge badge-${a.priority}`}>{a.priority}</span>
+        <div className="flex flex-col gap-4">
+          {items.map((a) => {
+            const styles = getPriorityStyles(a.priority);
+            return (
+              <div
+                key={a.id}
+                className={`p-6 rounded-2xl transition-all duration-300 shadow-sm ${styles.card}`}
+              >
+                <div className="flex flex-wrap items-start justify-between gap-2 mb-3">
+                  <div className="flex items-center gap-2.5">
+                    {styles.icon}
+                    <h3 className="text-lg font-bold text-slate-900">{a.title}</h3>
+                  </div>
+                  <span className={`px-2.5 py-0.5 rounded-full text-xs font-bold uppercase tracking-wider border ${styles.badge}`}>
+                    {a.priority}
+                  </span>
+                </div>
+                <p className="text-slate-600 text-sm leading-relaxed whitespace-pre-wrap">{a.body}</p>
+                <div className="flex items-center gap-1 text-xs text-slate-400 mt-4">
+                  <Clock className="h-3.5 w-3.5" />
+                  <span>
+                    {new Date(a.published_at).toLocaleString('en-IN', {
+                      dateStyle: 'medium',
+                      timeStyle: 'short',
+                    })}
+                  </span>
+                </div>
               </div>
-              <p>{a.body}</p>
-              <p style={{ marginTop: '0.75rem', fontSize: '0.8rem', color: 'var(--muted)' }}>
-                {new Date(a.published_at).toLocaleString('en-IN')}
-              </p>
-            </div>
-          ))}
+            );
+          })}
         </div>
       )}
     </div>
