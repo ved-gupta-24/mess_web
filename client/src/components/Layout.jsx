@@ -45,7 +45,7 @@ export default function Layout() {
             {/* Logo */}
             <NavLink to="/" className="flex items-center gap-2 text-brand-700 dark:text-brand-500 hover:opacity-90 transition-opacity">
               <UtensilsCrossed className="h-6 w-6 text-brand-600 dark:text-brand-500" />
-              <span className="font-bold text-lg tracking-tight text-slate-900 dark:text-white">Hostel Mess</span>
+              <span className="font-bold text-lg tracking-tight text-slate-900 dark:text-white">Zanskar Mess</span>
             </NavLink>
 
             {/* Desktop Nav */}
@@ -147,8 +147,15 @@ export default function Layout() {
       </main>
 
       <footer className="bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 mt-auto">
-        <div className="max-w-6xl mx-auto px-4 py-6 text-center text-sm text-slate-500 dark:text-slate-400">
-          &copy; {new Date().getFullYear()} Hostel Mess Portal. All rights reserved.
+        <div className="max-w-6xl mx-auto px-4 py-6 text-center text-sm text-slate-500 dark:text-slate-400 space-y-2">
+          <div>
+            &copy; {new Date().getFullYear()} Zanskar Mess. All rights reserved.
+          </div>
+          <div className="text-xs text-slate-400 dark:text-slate-500 flex flex-wrap justify-center gap-x-4 gap-y-1">
+            <span>Mess Secy: <strong className="text-slate-700 dark:text-slate-300 font-semibold">Divy Kalyani</strong></span>
+            <span className="hidden sm:inline text-slate-300 dark:text-slate-700">|</span>
+            <span>Site managed by <strong className="text-slate-700 dark:text-slate-300 font-semibold">Vedant Gupta</strong> (Technical Secretary)</span>
+          </div>
         </div>
       </footer>
     </div>

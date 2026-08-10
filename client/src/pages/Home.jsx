@@ -42,7 +42,7 @@ export default function Home() {
       {/* Hero Section */}
       <div className="text-center max-w-2xl mx-auto mb-12 md:mb-16">
         <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 dark:text-white tracking-tight mb-4">
-          Welcome to the <span className="bg-gradient-to-r from-brand-600 to-emerald-500 bg-clip-text text-transparent">Hostel Mess Portal</span>
+          Welcome to the <span className="bg-gradient-to-r from-brand-600 to-emerald-500 bg-clip-text text-transparent">Zanskar Mess Portal</span>
         </h1>
         <p className="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
           Your unified dashboard for menus, notices, opinions, and feedback. Designed for students, managed by mess committee.

@@ -95,7 +95,7 @@ export default function AdminDashboard() {
         </div>
         <div>
           <h1 className="text-3xl font-extrabold text-slate-900 tracking-tight">Admin Dashboard</h1>
-          <p className="text-slate-500 mt-0.5">Control center for managing the Hostel Mess Portal</p>
+          <p className="text-slate-500 mt-0.5">Control center for managing the Zanskar Mess Portal</p>
         </div>
       </div>
 
