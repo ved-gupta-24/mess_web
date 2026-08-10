@@ -1,0 +1,22 @@
+:root {
+  --bg: #f8faf9;
+  --surface: #ffffff;
+  --text: #1a2e1a;
+  --muted: #64748b;
+  --border: #e2e8f0;
+  --primary: #2d6a4f;
+  --primary-soft: #d8f3dc;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'DM Sans', system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+}
