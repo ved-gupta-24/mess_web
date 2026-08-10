@@ -41,10 +41,10 @@ export default function Home() {
     <div className="py-6 md:py-12">
       {/* Hero Section */}
       <div className="text-center max-w-2xl mx-auto mb-12 md:mb-16">
-        <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight mb-4">
+        <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 dark:text-white tracking-tight mb-4">
           Welcome to the <span className="bg-gradient-to-r from-brand-600 to-emerald-500 bg-clip-text text-transparent">Hostel Mess Portal</span>
         </h1>
-        <p className="text-lg text-slate-600 leading-relaxed">
+        <p className="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
           Your unified dashboard for menus, notices, opinions, and feedback. Designed for students, managed by mess committee.
         </p>
       </div>
@@ -57,16 +57,16 @@ export default function Home() {
             <Link
               key={card.to}
               to={card.to}
-              className={`flex flex-col justify-between p-6 md:p-8 rounded-2xl border border-slate-200 bg-white shadow-sm transition-all duration-300 transform hover:-translate-y-1 hover:shadow-md ${card.color}`}
+              className={`flex flex-col justify-between p-6 md:p-8 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm transition-all duration-300 transform hover:-translate-y-1 hover:shadow-md ${card.color}`}
             >
               <div>
                 <div className={`p-3 rounded-xl w-fit ${card.iconBg} mb-5`}>
                   <Icon className="h-6 w-6" />
                 </div>
-                <h2 className="text-xl font-bold text-slate-900 mb-2">{card.title}</h2>
-                <p className="text-slate-600 text-sm leading-relaxed mb-6">{card.description}</p>
+                <h2 className="text-xl font-bold text-slate-900 dark:text-white mb-2">{card.title}</h2>
+                <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6">{card.description}</p>
               </div>
-              <div className="flex items-center gap-1.5 text-sm font-semibold text-brand-700 mt-auto group">
+              <div className="flex items-center gap-1.5 text-sm font-semibold text-brand-700 dark:text-brand-500 mt-auto group">
                 Explore Portal
                 <ArrowRight className="h-4 w-4 transform group-hover:translate-x-1 transition-transform" />
               </div>
