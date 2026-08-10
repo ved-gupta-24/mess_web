@@ -1,44 +1,44 @@
 {
   "MON": {
-    "breakfast": "Aloo Paratha, Curd, Butter, Pickle, Tea",
-    "lunch": "Rajma Masala, Jeera Rice, Tawa Roti, Green Salad, Boondi Raita",
-    "beverage": "Cold Coffee / Lemon Iced Tea",
-    "dinner": "Paneer Bhurji, Dal Tadka, Roti, Rice, Gulab Jamun"
+    "breakfast": "Aloo Pyaj Parantha, Masala Oats, Chutney, Boiled Masala Corn, Fruit",
+    "lunch": "Soyabean Aloo ki Sabji (Dry) / Aloo Beans, Jeera Pulao, Rajma, Roti, Thandai/Coolers, Salad",
+    "beverage": "Tea",
+    "dinner": "Chicken Biryani, Paneer Tikka Masala, Veg Raita, Salan, Dal Kali Masoor, Sweets"
   },
   "TUE": {
-    "breakfast": "Idli, Sambar, Coconut Chutney, Tea / Coffee",
-    "lunch": "Aloo Gobbi Adraki, Yellow Dal Fry, Rice, Roti, Salad",
-    "beverage": "Fresh Buttermilk",
-    "dinner": "Egg Curry / Malai Kofta, Steamed Rice, Tawa Roti, Vanilla Ice Cream"
+    "breakfast": "Uthapam, Sambhar, Chutney Chocos, Macaroni, Coleslaw, Fruits",
+    "lunch": "Handi Paneer, Urad Chana, Rice, Roti Salad, Plain Chaach",
+    "beverage": "Tea",
+    "dinner": "Bhindi, Chhole, Rice, Roti, Snacks"
   },
   "WED": {
-    "breakfast": "Poha with Sev, Sprouts Salad, Jalebi, Tea",
-    "lunch": "Veg Kadhai, Dal Makhani, Rice, Roti, Salad",
-    "beverage": "Mixed Fruit Juice",
-    "dinner": "Chicken Masala / Shahi Paneer, Jeera Rice, Rumali Roti, Kheer"
+    "breakfast": "Vada Pao, Omelette, Namkeen Sevian, Cornflakes, Fruit Juice",
+    "lunch": "Aloo Fry, Rajma, Soya Rice, Roti, Dahi Bhalla",
+    "beverage": "Tea",
+    "dinner": "Manchurian, Veg Hakka Noodles, Fried Rice, Arhar Dal Tadka"
   },
   "THU": {
-    "breakfast": "Bread Butter Jam, Veg Cutlet, Boiled Eggs, Tea",
-    "lunch": "Chana Masala, Bhature, Pulao, Curd, Salad",
-    "beverage": "Sweet Lassi",
-    "dinner": "Aloo Beans, Mix Dal, Tawa Roti, Rice, Custard"
+    "breakfast": "Idli, Masala Idli, Chana Peanut Chaat, Daliya, Chocos, Fruit",
+    "lunch": "Kadhi Pakoda, Jeera Rice, Kala Chana, Jeera Aloo Masala, Roti Dahi and Samosa Chaat",
+    "beverage": "Tea",
+    "dinner": "Matar Paneer / Mushroom, Egg Curry, Dal Kali Masoor, Rice, Snacks"
   },
   "FRI": {
-    "breakfast": "Uttapam, Tomato Chutney, Sambar, Tea",
-    "lunch": "Bhindi Do Pyaza, Lauki Chana Dal, Rice, Roti, Salad",
-    "beverage": "Masala Chaas",
-    "dinner": "Paneer Butter Masala, Dal Panchmel, Butter Roti, Rice, Rasgulla"
+    "breakfast": "Besan Chilla, Upma, Boiled Eggs, Sweet Corn, Fruit Juice",
+    "lunch": "Handi Mixed Veg, Mix Light Dal, Jeera Rice, Roti, Pineapple Raita",
+    "beverage": "Tea",
+    "dinner": "Chef Choice Chicken, Rumali Roti, Soya Chaap, Arhar Dal Tadka, Rice, Roti, Sweets"
   },
   "SAT": {
-    "breakfast": "Methi Thepla, Curd, Butter, Tea",
-    "lunch": "Veg Biryani, Salan, Raita, Roti, Salad",
-    "beverage": "Jaljeera Sharbata",
-    "dinner": "Gobbi Masala, Chana Dal, Tawa Roti, Rice, Hot Halwa"
+    "breakfast": "Bread Pakora / Cutlet, Poha with Namkeen Sev, Coleslaw Sandwich, Chocos, Fruits",
+    "lunch": "Aloo Poori, Chana Dal Tadka, Rice, Kheer",
+    "beverage": "Tea",
+    "dinner": "Mixed Parantha, Dahi, Dal Makhani, Rice, Kulfi"
   },
   "SUN": {
-    "breakfast": "Chole Bhature, Pickle, Lassi / Tea",
-    "lunch": "Paneer Tikka Masala, Veg Pulao, Naan, Salad, Raita",
-    "beverage": "Mango Shake",
-    "dinner": "Special Butter Chicken / Shahi Paneer, Butter Naan, Rice, Gulab Jamun"
+    "breakfast": "Mini Dosa, Sambhar Chutneys, Boiled Eggs Dalia, Fruit Chaat",
+    "lunch": "Pindi Chhole, Bhature, Kulcha, Aloo Chokha, Rice, Achari Mirch and Dahi",
+    "beverage": "Tea",
+    "dinner": "Sev Tamatar, Dal Moong Malka, Rice, Roti, Fruit Custard"
   }
 }

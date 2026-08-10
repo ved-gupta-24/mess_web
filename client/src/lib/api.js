@@ -9,7 +9,7 @@ export async function api(path, options = {}) {
   };
 
   const res = await fetch(`${API}${path}`, { ...options, headers });
-  if (!res.ok && res.status !== 401) {
+  if (!res.ok) {
     const err = await res.json().catch(() => ({}));
     throw new Error(err.error || 'Request failed');
   }
