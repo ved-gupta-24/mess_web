@@ -211,7 +211,7 @@ export default function Complaints() {
               placeholder="Describe your feedback or issue in detail..."
               value={description}
               onChange={(e) => setDescription(e.target.value)}
-              className="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-800 dark:text-slate-200 text-sm focus:outline-none focus:border-brand-500 focus:ring-2 focus:ring-brand-100 transition-all bg-white dark:bg-slate-950 resize-y min-h-[120px]"
+              className="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-800 dark:text-slate-200 text-sm focus:outline-none focus:border-brand-500 focus:ring-2 focus:ring-brand-100 transition-all bg-white dark:bg-slate-950 resize-none min-h-[120px]"
               required
             />
           </div>

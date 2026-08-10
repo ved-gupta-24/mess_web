@@ -79,7 +79,7 @@ export default function AdminPolls() {
                 value={optionsText}
                 onChange={(e) => setOptionsText(e.target.value)}
                 placeholder="Option A&#10;Option B"
-                className="w-full px-4 py-3 rounded-xl border border-slate-200 text-slate-800 text-sm focus:outline-none focus:border-brand-500 focus:ring-2 focus:ring-brand-100 transition-all resize-y min-h-[120px]"
+                className="w-full px-4 py-3 rounded-xl border border-slate-200 text-slate-800 text-sm focus:outline-none focus:border-brand-500 focus:ring-2 focus:ring-brand-100 transition-all resize-none min-h-[120px]"
                 required
               />
             </div>

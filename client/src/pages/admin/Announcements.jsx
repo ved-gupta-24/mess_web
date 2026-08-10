@@ -99,7 +99,7 @@ export default function AdminAnnouncements() {
                 placeholder="Describe details..."
                 value={body}
                 onChange={(e) => setBody(e.target.value)}
-                className="w-full px-4 py-3 rounded-xl border border-slate-200 text-slate-800 text-sm focus:outline-none focus:border-brand-500 focus:ring-2 focus:ring-brand-100 transition-all resize-y min-h-[120px]"
+                className="w-full px-4 py-3 rounded-xl border border-slate-200 text-slate-800 text-sm focus:outline-none focus:border-brand-500 focus:ring-2 focus:ring-brand-100 transition-all resize-none min-h-[120px]"
                 required
               />
             </div>

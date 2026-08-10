@@ -98,7 +98,7 @@ export default function AdminMenus() {
                 value={itemsText}
                 onChange={(e) => setItemsText(e.target.value)}
                 placeholder="Masala Dosa&#10;Sambar&#10;Coconut Chutney"
-                className="w-full px-4 py-3 rounded-xl border border-slate-200 text-slate-800 text-sm focus:outline-none focus:border-brand-500 focus:ring-2 focus:ring-brand-100 transition-all resize-y min-h-[120px]"
+                className="w-full px-4 py-3 rounded-xl border border-slate-200 text-slate-800 text-sm focus:outline-none focus:border-brand-500 focus:ring-2 focus:ring-brand-100 transition-all resize-none min-h-[120px]"
                 required
               />
             </div>

@@ -183,7 +183,7 @@ export default function AdminComplaints() {
                       placeholder="Write response draft..."
                       value={replyDraft[c.id] ?? c.admin_reply ?? ''}
                       onChange={(e) => setReplyDraft((d) => ({ ...d, [c.id]: e.target.value }))}
-                      className="w-full px-3 py-2 rounded-xl border border-slate-200 text-slate-800 text-xs focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-100 transition-all resize-y"
+                      className="w-full px-3 py-2 rounded-xl border border-slate-200 text-slate-800 text-xs focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-100 transition-all resize-none"
                     />
                   </div>
                 </div>
