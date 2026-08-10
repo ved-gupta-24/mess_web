@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
-import { NavLink, Outlet } from 'react-router-dom';
+import { NavLink, Outlet, useLocation, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
-import { Menu as MenuIcon, X, LogOut, UtensilsCrossed, Sun, Moon } from 'lucide-react';
+import { Menu as MenuIcon, X, LogOut, UtensilsCrossed, Sun, Moon, Megaphone, Vote } from 'lucide-react';
+import { api } from '../lib/api';
 
 export default function Layout() {
   const { admin, logout } = useAuth();
@@ -12,6 +13,85 @@ export default function Layout() {
     }
     return 'light';
   });
+
+  const navigate = useNavigate();
+  const location = useLocation();
+  const [notification, setNotification] = useState(null);
+
+  const dismissNotification = (id) => {
+    const dismissed = JSON.parse(localStorage.getItem('dismissed_notifications') || '[]');
+    if (!dismissed.includes(id)) {
+      dismissed.push(id);
+      localStorage.setItem('dismissed_notifications', JSON.stringify(dismissed));
+    }
+    setNotification(null);
+  };
+
+  useEffect(() => {
+    async function fetchNotification() {
+      try {
+        const [announcements, polls] = await Promise.all([
+          api('/api/announcements').catch(() => []),
+          api('/api/polls').catch(() => [])
+        ]);
+
+        const dismissed = JSON.parse(localStorage.getItem('dismissed_notifications') || '[]');
+        const now = new Date();
+        const oneDayMs = 24 * 60 * 60 * 1000;
+        const validItems = [];
+
+        announcements.forEach((a) => {
+          const pubTime = new Date(a.published_at).getTime();
+          const age = now.getTime() - pubTime;
+          const id = `announcement_${a.id}`;
+          if (age < oneDayMs && !dismissed.includes(id)) {
+            validItems.push({
+              id,
+              type: 'announcement',
+              title: 'New Announcement',
+              message: a.title,
+              time: pubTime,
+              link: '/announcements'
+            });
+          }
+        });
+
+        polls.forEach((p) => {
+          const createTime = new Date(p.created_at).getTime();
+          const age = now.getTime() - createTime;
+          const id = `poll_${p.id}`;
+          if (age < oneDayMs && !dismissed.includes(id)) {
+            validItems.push({
+              id,
+              type: 'poll',
+              title: 'New Poll Live',
+              message: p.question,
+              time: createTime,
+              link: '/polls'
+            });
+          }
+        });
+
+        validItems.sort((a, b) => b.time - a.time);
+
+        if (validItems.length > 0) {
+          setNotification(validItems[0]);
+        } else {
+          setNotification(null);
+        }
+      } catch (err) {
+        console.error('Failed to fetch notifications:', err);
+      }
+    }
+
+    fetchNotification();
+  }, [location.pathname]);
+
+  useEffect(() => {
+    if (notification && location.pathname === notification.link) {
+      dismissNotification(notification.id);
+    }
+  }, [location.pathname, notification]);
 
   useEffect(() => {
     const root = window.document.documentElement;
@@ -39,6 +119,37 @@ export default function Layout() {
 
   return (
     <div className="min-h-screen flex flex-col bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-200 transition-colors duration-200">
+      {/* Top Notification Banner */}
+      {notification && (
+        <div className="bg-brand-600 dark:bg-brand-900 text-white relative py-2.5 px-8 text-center text-xs sm:text-sm font-semibold shadow-sm transition-all duration-300 flex items-center justify-center gap-2 z-50">
+          <div
+            className="flex items-center gap-2 cursor-pointer hover:underline text-white decoration-white/50"
+            onClick={() => {
+              navigate(notification.link);
+              dismissNotification(notification.id);
+            }}
+          >
+            {notification.type === 'poll' ? (
+              <Vote className="h-4 w-4 animate-bounce flex-shrink-0" />
+            ) : (
+              <Megaphone className="h-4 w-4 animate-pulse flex-shrink-0" />
+            )}
+            <span className="bg-white/20 dark:bg-white/10 px-2 py-0.5 rounded text-[10px] uppercase font-bold tracking-wider flex-shrink-0">
+              {notification.title}
+            </span>
+            <span className="line-clamp-1">{notification.message}</span>
+          </div>
+          <button
+            type="button"
+            onClick={() => dismissNotification(notification.id)}
+            className="absolute right-4 top-1/2 -translate-y-1/2 p-1 text-white/80 hover:text-white hover:bg-white/10 rounded-lg transition-colors cursor-pointer"
+            aria-label="Dismiss notification"
+          >
+            <X className="h-4 w-4" />
+          </button>
+        </div>
+      )}
+
       <header className="sticky top-0 z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border-b border-slate-200/80 dark:border-slate-800/80">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
