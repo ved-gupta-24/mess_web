@@ -1,4 +1,5 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import Layout from './components/Layout';
 import Home from './pages/Home';
 import Menu from './pages/Menu';
@@ -22,20 +23,23 @@ function AdminRoute({ children }) {
 
 export default function App() {
   return (
-    <Routes>
-      <Route element={<Layout />}>
-        <Route index element={<Home />} />
-        <Route path="menu" element={<Menu />} />
-        <Route path="announcements" element={<Announcements />} />
-        <Route path="polls" element={<Polls />} />
-        <Route path="complaints" element={<Complaints />} />
-        <Route path="admin/login" element={<AdminLogin />} />
-        <Route path="admin" element={<AdminRoute><AdminDashboard /></AdminRoute>} />
-        <Route path="admin/menus" element={<AdminRoute><AdminMenus /></AdminRoute>} />
-        <Route path="admin/announcements" element={<AdminRoute><AdminAnnouncements /></AdminRoute>} />
-        <Route path="admin/polls" element={<AdminRoute><AdminPolls /></AdminRoute>} />
-        <Route path="admin/complaints" element={<AdminRoute><AdminComplaints /></AdminRoute>} />
-      </Route>
-    </Routes>
+    <>
+      <Routes>
+        <Route element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="menu" element={<Menu />} />
+          <Route path="announcements" element={<Announcements />} />
+          <Route path="polls" element={<Polls />} />
+          <Route path="complaints" element={<Complaints />} />
+          <Route path="admin/login" element={<AdminLogin />} />
+          <Route path="admin" element={<AdminRoute><AdminDashboard /></AdminRoute>} />
+          <Route path="admin/menus" element={<AdminRoute><AdminMenus /></AdminRoute>} />
+          <Route path="admin/announcements" element={<AdminRoute><AdminAnnouncements /></AdminRoute>} />
+          <Route path="admin/polls" element={<AdminRoute><AdminPolls /></AdminRoute>} />
+          <Route path="admin/complaints" element={<AdminRoute><AdminComplaints /></AdminRoute>} />
+        </Route>
+      </Routes>
+      <SpeedInsights />
+    </>
   );
 }
