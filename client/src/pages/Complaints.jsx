@@ -152,7 +152,7 @@ export default function Complaints() {
           )}
 
           <div className="space-y-1.5">
-            <label htmlFor="roll" className="block text-sm font-semibold text-slate-700 dark:text-slate-350">
+            <label htmlFor="roll" className="block text-sm font-semibold text-slate-700 dark:text-slate-300">
               Roll number
             </label>
             <input
@@ -177,7 +177,7 @@ export default function Complaints() {
           </div>
 
           <div className="space-y-1.5">
-            <label htmlFor="cat" className="block text-sm font-semibold text-slate-700 dark:text-slate-350">
+            <label htmlFor="cat" className="block text-sm font-semibold text-slate-700 dark:text-slate-300">
               Category
             </label>
             <div className="relative">
@@ -202,7 +202,7 @@ export default function Complaints() {
           </div>
 
           <div className="space-y-1.5">
-            <label htmlFor="desc" className="block text-sm font-semibold text-slate-700 dark:text-slate-350">
+            <label htmlFor="desc" className="block text-sm font-semibold text-slate-700 dark:text-slate-300">
               Description
             </label>
             <textarea
@@ -242,7 +242,7 @@ export default function Complaints() {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div className="space-y-1.5">
-                <label htmlFor="roll2" className="block text-sm font-semibold text-slate-700 dark:text-slate-350">
+                <label htmlFor="roll2" className="block text-sm font-semibold text-slate-700 dark:text-slate-300">
                   Roll number
                 </label>
                 <input
@@ -262,7 +262,7 @@ export default function Complaints() {
               </div>
 
               <div className="space-y-1.5">
-                <label htmlFor="code" className="block text-sm font-semibold text-slate-700 dark:text-slate-350">
+                <label htmlFor="code" className="block text-sm font-semibold text-slate-700 dark:text-slate-300">
                   Tracking code
                 </label>
                 <input

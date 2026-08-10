@@ -101,7 +101,7 @@ export default function Polls() {
             return (
               <div
                 key={poll.id}
-                className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 md:p-8 shadow-sm transition-all hover:border-slate-350 dark:hover:border-slate-700"
+                className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 md:p-8 shadow-sm transition-all hover:border-slate-300 dark:hover:border-slate-700"
               >
                 <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-6 leading-snug">{poll.question}</h3>
                 

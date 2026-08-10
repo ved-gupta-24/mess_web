@@ -67,7 +67,7 @@ export default function Menu() {
         {items.map((item) => (
           <li
             key={item}
-            className="text-slate-750 dark:text-slate-350 text-xs flex items-start gap-1.5 py-0.5"
+            className="text-slate-700 dark:text-slate-300 text-xs flex items-start gap-1.5 py-0.5"
           >
             <span className="h-1 w-1 rounded-full bg-brand-500 dark:bg-brand-400 mt-1.5 flex-shrink-0" />
             <span className="leading-relaxed font-medium">{item}</span>
@@ -150,7 +150,7 @@ export default function Menu() {
             className={`px-4 py-2.5 text-sm font-semibold rounded-xl border transition-all flex items-center gap-2 cursor-pointer ${
               mealFilter === m.key
                 ? 'bg-brand-600 border-brand-600 text-white shadow-sm'
-                : 'bg-white dark:bg-slate-900 border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-850 hover:border-slate-350 dark:hover:border-slate-700'
+                : 'bg-white dark:bg-slate-900 border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-850 hover:border-slate-300 dark:hover:border-slate-700'
             }`}
             onClick={() => setMealFilter(m.key)}
           >
@@ -258,7 +258,7 @@ export default function Menu() {
               className={`bg-white dark:bg-slate-900 border rounded-2xl shadow-sm transition-all duration-300 ${
                 isToday
                   ? 'border-brand-500 ring-2 ring-brand-500/20'
-                  : 'border-slate-200 dark:border-slate-800 hover:border-slate-350 dark:hover:border-slate-700'
+                  : 'border-slate-200 dark:border-slate-800 hover:border-slate-300 dark:hover:border-slate-700'
               }`}
             >
               {/* Date Header */}
@@ -307,7 +307,7 @@ export default function Menu() {
                             {items.map((item) => (
                               <li
                                 key={item}
-                                className="text-slate-700 dark:text-slate-350 text-sm flex items-center gap-2 py-1 px-2 hover:bg-slate-50 dark:hover:bg-slate-850/50 rounded-lg transition-colors"
+                                className="text-slate-700 dark:text-slate-300 text-sm flex items-center gap-2 py-1 px-2 hover:bg-slate-50 dark:hover:bg-slate-800/50 rounded-lg transition-colors"
                               >
                                 <span className="h-1.5 w-1.5 rounded-full bg-brand-500 dark:bg-brand-450 flex-shrink-0" />
                                 <span className="font-medium">{item}</span>

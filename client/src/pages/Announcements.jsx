@@ -76,7 +76,7 @@ export default function Announcements() {
                     {a.priority}
                   </span>
                 </div>
-                <p className="text-slate-650 dark:text-slate-350 text-sm leading-relaxed whitespace-pre-wrap">{a.body}</p>
+                <p className="text-slate-700 dark:text-slate-300 text-sm leading-relaxed whitespace-pre-wrap">{a.body}</p>
                 <div className="flex items-center gap-1 text-xs text-slate-400 dark:text-slate-500 mt-4">
                   <Clock className="h-3.5 w-3.5" />
                   <span>
