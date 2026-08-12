@@ -328,6 +328,12 @@ export default function Menu() {
           );
         })}
       </div>
+
+      {/* Footer disclaimer for asterisks */}
+      <div className="mt-8 pt-6 border-t border-slate-200 dark:border-slate-800 text-xs text-slate-400 dark:text-slate-500 flex items-center gap-1.5 justify-center">
+        <span className="inline-block animate-pulse h-1.5 w-1.5 rounded-full bg-amber-500" />
+        <span>* Asterisks mean liable to admin permissions</span>
+      </div>
     </div>
   );
 }

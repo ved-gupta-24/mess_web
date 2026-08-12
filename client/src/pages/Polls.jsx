@@ -56,7 +56,7 @@ export default function Polls() {
           <input
             id="roll"
             type="text"
-            placeholder="e.g. cs1240384"
+            placeholder="e.g. cs1240384 or een242016"
             value={rollNo}
             onChange={(e) => setRollNo(e.target.value)}
             className={`w-full px-4 py-2.5 rounded-xl border font-mono uppercase tracking-wider text-sm transition-all focus:outline-none focus:ring-2 ${
@@ -69,7 +69,7 @@ export default function Polls() {
           />
           {rollNo.trim() !== '' && !isRollValid && (
             <p className="text-xs text-rose-600 dark:text-rose-400 flex items-center gap-1 mt-1">
-              <AlertCircle className="h-3 w-3" /> Roll number format must be 2 letters followed by 7 digits (e.g. cs1240384).
+              <AlertCircle className="h-3 w-3" /> Roll number format must be 2 letters + 7 digits (e.g. cs1240384) or 3 letters + 6 digits (e.g. een242016).
             </p>
           )}
           {isRollValid && (

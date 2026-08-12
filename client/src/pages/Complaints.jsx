@@ -157,7 +157,7 @@ export default function Complaints() {
             </label>
             <input
               id="roll"
-              placeholder="e.g. me1230948"
+              placeholder="e.g. cs1240384 or een242016"
               value={rollNo}
               onChange={(e) => setRollNo(e.target.value)}
               className={`w-full px-4 py-2.5 rounded-xl border font-mono uppercase tracking-wider text-sm transition-all focus:outline-none focus:ring-2 ${
@@ -165,13 +165,13 @@ export default function Complaints() {
                   ? 'border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 text-slate-800 dark:text-slate-200 focus:border-slate-400 dark:focus:border-slate-700 focus:ring-slate-100 dark:focus:ring-slate-900'
                   : isRollValid
                   ? 'border-brand-500 focus:border-brand-600 focus:ring-brand-100 dark:focus:ring-brand-950 text-brand-700 dark:text-brand-300 bg-white dark:bg-slate-950 font-semibold'
-                  : 'border-rose-400 focus:border-rose-500 focus:ring-rose-100 dark:focus:ring-rose-950 text-rose-700 dark:text-rose-450 bg-white dark:bg-slate-950'
+                  : 'border-rose-400 focus:border-rose-500 focus:ring-rose-100 dark:focus:ring-rose-950 text-rose-700 dark:text-rose-455 bg-white dark:bg-slate-950'
               }`}
               required
             />
             {rollNo.trim() !== '' && !isRollValid && (
               <p className="text-xs text-rose-600 dark:text-rose-400 flex items-center gap-1">
-                <AlertCircle className="h-3.5 w-3.5" /> Roll number format must be 2 letters followed by 7 digits.
+                <AlertCircle className="h-3.5 w-3.5" /> Roll number format must be 2 letters + 7 digits or 3 letters + 6 digits.
               </p>
             )}
           </div>
@@ -247,7 +247,7 @@ export default function Complaints() {
                 </label>
                 <input
                   id="roll2"
-                  placeholder="e.g. me1230948"
+                  placeholder="e.g. cs1240384 or een242016"
                   value={rollNo}
                   onChange={(e) => setRollNo(e.target.value)}
                   className={`w-full px-4 py-2.5 rounded-xl border font-mono uppercase tracking-wider text-sm transition-all focus:outline-none focus:ring-2 ${

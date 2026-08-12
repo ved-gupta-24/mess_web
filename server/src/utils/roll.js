@@ -1,4 +1,4 @@
-const ROLL_REGEX = /^[a-z]{2}\d{7}$/i;
+const ROLL_REGEX = /^([a-z]{2}\d{7}|[a-z]{3}\d{6})$/i;
 
 export function normalizeRoll(rollNo) {
   return typeof rollNo === 'string' ? rollNo.trim().toLowerCase() : '';

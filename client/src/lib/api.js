@@ -16,7 +16,7 @@ export async function api(path, options = {}) {
   return res.json();
 }
 
-export const ROLL_PATTERN = /^[a-z]{2}\d{7}$/i;
+export const ROLL_PATTERN = /^([a-z]{2}\d{7}|[a-z]{3}\d{6})$/i;
 
 export function isValidRoll(roll) {
   return ROLL_PATTERN.test(roll?.trim?.() || '');
