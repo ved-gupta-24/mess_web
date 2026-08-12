@@ -6,20 +6,20 @@
     "dinner": "Chicken Biryani, Paneer Tikka Masala, Veg Raita, Salan, Dal Kali Masoor, Sweets"
   },
   "TUE": {
-    "breakfast": "Uthapam, Sambhar, Chutney Chocos, Macaroni, Coleslaw, Fruits",
-    "lunch": "Handi Paneer, Urad Chana, Rice, Roti Salad, Plain Chaach",
+    "breakfast": "Uthapam, Sambhar, Chutney, Chocos, Macaroni, Coleslaw, Fruits",
+    "lunch": "Handi Paneer, Urad Chana, Rice, Roti, Salad, Plain Chaach",
     "beverage": "Tea",
     "dinner": "Bhindi, Chhole, Rice, Roti, Snacks"
   },
   "WED": {
-    "breakfast": "Vada Pao, Omelette, Namkeen Sevian, Cornflakes, Fruit Juice",
+    "breakfast": "Vada Pao, Omelette, Namkeen Sevian, Cornflakes, Fruit Juice**",
     "lunch": "Aloo Fry, Rajma, Soya Rice, Roti, Dahi Bhalla",
     "beverage": "Tea",
     "dinner": "Manchurian, Veg Hakka Noodles, Fried Rice, Arhar Dal Tadka"
   },
   "THU": {
     "breakfast": "Idli, Masala Idli, Chana Peanut Chaat, Daliya, Chocos, Fruit",
-    "lunch": "Kadhi Pakoda, Jeera Rice, Kala Chana, Jeera Aloo Masala, Roti Dahi and Samosa Chaat",
+    "lunch": "Kadhi Pakoda, Jeera Rice, Kala Chana, Jeera Aloo Masala, Roti, Dahi and Samosa Chaat",
     "beverage": "Tea",
     "dinner": "Matar Paneer / Mushroom, Egg Curry, Dal Kali Masoor, Rice, Snacks"
   },
@@ -36,7 +36,7 @@
     "dinner": "Mixed Parantha, Dahi, Dal Makhani, Rice, Kulfi"
   },
   "SUN": {
-    "breakfast": "Mini Dosa, Sambhar Chutneys, Boiled Eggs Dalia, Fruit Chaat",
+    "breakfast": "Mini Dosa, Sambhar, Chutneys, Boiled Eggs, Dalia, Fruit Chaat",
     "lunch": "Pindi Chhole, Bhature, Kulcha, Aloo Chokha, Rice, Achari Mirch and Dahi",
     "beverage": "Tea",
     "dinner": "Sev Tamatar, Dal Moong Malka, Rice, Roti, Fruit Custard"
