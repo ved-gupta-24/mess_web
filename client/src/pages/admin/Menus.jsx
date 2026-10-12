@@ -5,8 +5,16 @@ import { ArrowLeft, Calendar, Save, Trash2 } from 'lucide-react';
 
 const MEALS = ['breakfast', 'lunch', 'dinner'];
 
+function getTodayDateStr() {
+  const d = new Date();
+  const year = d.getFullYear();
+  const month = String(d.getMonth() + 1).padStart(2, '0');
+  const date = String(d.getDate()).padStart(2, '0');
+  return `${year}-${month}-${date}`;
+}
+
 export default function AdminMenus() {
-  const [date, setDate] = useState(new Date().toISOString().slice(0, 10));
+  const [date, setDate] = useState(getTodayDateStr());
   const [mealType, setMealType] = useState('breakfast');
   const [itemsText, setItemsText] = useState('');
   const [menus, setMenus] = useState([]);

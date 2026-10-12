@@ -4,15 +4,21 @@ import menuData from '../data/menu.json';
 
 const MEALS = ['breakfast', 'lunch', 'beverage', 'dinner'];
 
+function formatLocalDate(d) {
+  const year = d.getFullYear();
+  const month = String(d.getMonth() + 1).padStart(2, '0');
+  const date = String(d.getDate()).padStart(2, '0');
+  return `${year}-${month}-${date}`;
+}
+
 function getWeekDates() {
   const today = new Date();
   const day = today.getDay();
-  const monday = new Date(today);
-  monday.setDate(today.getDate() - ((day + 6) % 7));
+  const monday = new Date(today.getFullYear(), today.getMonth(), today.getDate());
+  monday.setDate(monday.getDate() - ((day + 6) % 7));
   return Array.from({ length: 7 }, (_, i) => {
-    const d = new Date(monday);
-    d.setDate(monday.getDate() + i);
-    return d.toISOString().slice(0, 10);
+    const d = new Date(monday.getFullYear(), monday.getMonth(), monday.getDate() + i);
+    return formatLocalDate(d);
   });
 }
 
@@ -25,7 +31,7 @@ export default function Menu() {
   const today = new Date();
   const day = today.getDay();
   const mondayToSundayIndex = (day + 6) % 7;
-  const todayStr = today.toISOString().slice(0, 10);
+  const todayStr = formatLocalDate(today);
 
   const displayedDays = tab === 'today'
     ? [{ code: DAYS_OF_WEEK[mondayToSundayIndex], date: weekDates[mondayToSundayIndex] }]
