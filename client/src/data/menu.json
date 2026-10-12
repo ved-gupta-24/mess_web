@@ -1,44 +1,44 @@
 {
   "MON": {
-    "breakfast": "Aloo Pyaj Parantha, Masala Oats, Chutney, Boiled Masala Corn, Fruit",
-    "lunch": "Soyabean Aloo ki Sabji (Dry) / Aloo Beans, Jeera Pulao, Rajma, Roti, Thandai/Coolers, Salad",
+    "breakfast": "Aloo Pyaj Parantha, Masala Oats, Chutney, Boiled Masala Corn, Fruit, Sprouts",
+    "lunch": "Aloo Beans, Soya Rice, Rajma, Roti, Salad, Pineapple Raita",
     "beverage": "Tea",
-    "dinner": "Chicken Biryani, Paneer Tikka Masala, Veg Raita, Salan, Dal Kali Masoor, Sweets"
+    "dinner": "Chicken Biryani, Paneer Tikka Masala, Mint Veg Raita, Salan, Dal Kali Masoor, Sweet"
   },
   "TUE": {
-    "breakfast": "Uthapam, Sambhar, Chutney, Chocos, Macaroni, Coleslaw, Fruits",
-    "lunch": "Handi Paneer, Urad Chana, Rice, Roti, Salad, Plain Chaach",
+    "breakfast": "Uthapam, Sambhar, Chutney, Dhokla, Sprouts, Chocos, Macaroni, Coleslaw, Fruits",
+    "lunch": "Handi Mixed Veg, Dal Urad Chana, Jeera Rice, Aloo Gobhi, Dahi Bhalla",
     "beverage": "Tea",
-    "dinner": "Bhindi, Chhole, Rice, Roti, Snacks"
+    "dinner": "Bhindi, Pindi Chhole, Rice, Roti, Snacks"
   },
   "WED": {
-    "breakfast": "Vada Pao, Omelette, Namkeen Sevian, Cornflakes, Fruit Juice**",
-    "lunch": "Aloo Fry, Rajma, Soya Rice, Roti, Dahi Bhalla",
+    "breakfast": "Vada Pao, Omelette, Namkeen Sevian, Cornflakes, Fruit Juice, Sprouts",
+    "lunch": "Aloo Fry / Kala Chana, Kadhi Pakoda, Rice, Roti, Salad, Fryums",
     "beverage": "Tea",
-    "dinner": "Manchurian, Veg Hakka Noodles, Fried Rice, Arhar Dal Tadka"
+    "dinner": "Manchurian, Veg Noodles, Dal Tadka, Rice, Roti"
   },
   "THU": {
-    "breakfast": "Idli, Masala Idli, Chana Peanut Chaat, Daliya, Chocos, Fruit",
-    "lunch": "Kadhi Pakoda, Jeera Rice, Kala Chana, Jeera Aloo Masala, Roti, Dahi and Samosa Chaat",
+    "breakfast": "Idli, Masala Idli, Chana Peanut Chaat, Daliya, Chocos, Fruit, Sprouts",
+    "lunch": "Handi Paneer, Urad Chana, Rice, Roti, Salad, Dahi",
     "beverage": "Tea",
-    "dinner": "Matar Paneer / Mushroom, Egg Curry, Dal Kali Masoor, Rice, Snacks"
+    "dinner": "Matar Paneer / Mushroom, Egg Curry, Dal Makhani, Rice, Snacks"
   },
   "FRI": {
-    "breakfast": "Besan Chilla, Upma, Boiled Eggs, Sweet Corn, Fruit Juice",
-    "lunch": "Handi Mixed Veg, Mix Light Dal, Jeera Rice, Roti, Pineapple Raita",
+    "breakfast": "Besan Chilla, Upma, Boiled Eggs, Sweet Corn, Fruit Juice, Sprouts",
+    "lunch": "Soyabean Aloo ki Sabji (Dry) / Hari Pyaaz, Mix Light Dal, Jeera Rice, Roti, Dahi, Samosa Chaat",
     "beverage": "Tea",
-    "dinner": "Chef Choice Chicken, Rumali Roti, Malai Kofta, Arhar Dal Tadka, Rice, Roti, Sweets"
+    "dinner": "Chef Choice Chicken, Rumali Roti, Malai Kofta, Dal Tadka, Rice, Roti, Rasmalai"
   },
   "SAT": {
-    "breakfast": "Bread Pakora / Cutlet, Poha with Namkeen Sev, Coleslaw Sandwich, Chocos, Fruits",
-    "lunch": "Aloo Poori, Chana Dal Tadka, Rice, Kheer",
+    "breakfast": "Bread Pakora / Cutlet, Poha with Namkeen Sev, Coleslaw Sandwich, Chocos, Fruits, Sprouts",
+    "lunch": "Aloo Poori / Sambhar Vada, Roti, Lemon Rice, Dahi Bhalla, Papad",
     "beverage": "Tea",
-    "dinner": "Mixed Parantha, Dahi, Dal Makhani, Rice, Kulfi"
+    "dinner": "Mixed Parantha, Dahi, Dal Makhani, Rice, Moong Dal Halwa / Gajar ka Halwa"
   },
   "SUN": {
-    "breakfast": "Mini Dosa, Sambhar, Chutneys, Boiled Eggs, Dalia, Fruit Chaat",
-    "lunch": "Pindi Chhole, Bhature, Kulcha, Aloo Chokha, Rice, Achari Mirch and Dahi",
+    "breakfast": "Mini Dosa, Sambhar Chutneys, Boiled Eggs, Sprouts, Dalia, Fruit Chaat",
+    "lunch": "Pindi Chhole, Bhature, Kulcha, Aloo Chokha, Rice, Achari Mirch, Dahi, Salad",
     "beverage": "Tea",
-    "dinner": "Arbi Masala, Dal Moong Malka, Rice, Roti, Fruit Custard"
+    "dinner": "Malai Pyaaz / Dum Aloo, Arhar Dal Tadka, Rice, Roti, Fruit Custard"
   }
 }
